@@ -92,6 +92,17 @@
   
   
       ,"page0": {
+          "title": "About Me",
+          "content": "This website is powered by fastpages [^1]. . Hobbies . I like football | I like basketball | I enjoy trading stocks | I like writing and blogging | I like filming videos | . Goals for CSP This Year: . Hi! My name is Akshat, I have several goals for CSP this year! . I want to learn python and understand the fundamentals of it | I want to understand how python is used and why it is so vital in the computing world | I also want to understand the projects I will be doing, and having fun at the same time! | . I am very excited for this class, and I look forward to working on it!! .",
+          "url": "https://akshat122805.github.io/fastpages/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page1": {
           "title": "CSP Notes",
           "content": "How to start coding . PS C: Users Aksha&gt; wsl (base) akshat1228@LAPTOP-V4AGJ4SP:/mnt/c/Users/Aksha$ cd (base) akshat1228@LAPTOP-V4AGJ4SP:~$ ls anaconda3 apcsp vscode wsl (base) akshat1228@LAPTOP-V4AGJ4SP:~$ cd vscode (base) akshat1228@LAPTOP-V4AGJ4SP:~/vscode$ ls APCSP vscode (base) akshat1228@LAPTOP-V4AGJ4SP:~/vscode$ cd vscode (base) akshat1228@LAPTOP-V4AGJ4SP:~/vscode/vscode$ code . . Creating a Notebook using Bash . You can do this by simply entering vscode through wsl. Here are some python commands: | . echo &quot;Using conditional statement to create a project directory and project&quot; # Variable section export project_dir=$HOME/vscode # change vscode to different name to test git clone export project=$project_dir/APCSP # change APCSP to name of project from git clone export project_repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; # change to project of choice cd ~ # start in home directory # Conditional block to make a project directory if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Conditional block to git clone a project from project_repo if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; .",
           "url": "https://akshat122805.github.io/fastpages/notes/",
@@ -104,15 +115,6 @@
   
 
   
-      ,"page2": {
-          "title": "About Me",
-          "content": "This website is powered by fastpages [^1]. . Hobbies . I like football | I like basketball | I enjoy trading stocks | I like writing and blogging | I like filming videos | . Goals for CSP This Year: . Hi! My name is Akshat, I have several goals for CSP this year! . I want to learn python and understand the fundamentals of it | I want to understand how python is used and why it is so vital in the computing world | I also want to understand the projects I will be doing, and having fun at the same time! | . I am very excited for this class, and I look forward to working on it!! .",
-          "url": "https://akshat122805.github.io/fastpages/about/",
-          "relUrl": "/about/",
-          "date": ""
-      }
-      
-  
 
   
 
@@ -122,8 +124,6 @@
   
 
   
-  
-
   
 
   
