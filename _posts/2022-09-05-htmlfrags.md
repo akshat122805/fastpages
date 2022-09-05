@@ -11,7 +11,7 @@ title: Akshat's HTML Fragments
 - So basically what I did was change the theme of my fastpages from minima to hacker. But this resulted in my HTML crashing and my website completely crashing!!!
 - Everything basically became alligned to the left, which shows how much of a component CSS is.
 - Dropdown menu is no longer functioning
-![]({{site.baseurl}}/images/HTMLfrags.png "https://github.com/A.PARIKH/fastpages") 
+![]({{site.baseurl}}/images/HTMLfrags.png "https://github.com/akshat122805/fastpages") 
 
 
 
@@ -33,14 +33,14 @@ title: Akshat's HTML Fragments
 
 ## Search Feature
 
-![]({{site.baseurl}}/images/search.png "https://github.com/LiavB2/ominicient-lavebear")
+![]({{site.baseurl}}/images/searchbar.png "https://github.com/akshat12205/fastpages")
 
 - Using the search page, you can see the ability to search for any key words that pop up throughout the fastpages website.
 - This image displays a search for "Python" and it outputs links to every page/post/markdown/notebook on the website that contains python in it.
 
 ## Tagging
 
-![]({{site.baseurl}}/images/tags.png "https://github.com/LiavB2/ominicient-lavebear")
+![]({{site.baseurl}}/images/tags.png "https://github.com/akshat122805/fastpages")
 
 - As you can see, the fastpages website has tags for any markdown post or Jupyter notebook, and any post that contains code blocks with Bash or Python Kernel.
 - Under the 4 tags that are present you can see every post/markdown in the website that contains each of the tags (categories). 
