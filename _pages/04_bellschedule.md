@@ -201,7 +201,7 @@ layout: post
 <h2>Friday:</h2>
 <table>
     <tr>
-        <th> [Period](https://vardaansinha.github.io/FastPages/markdown/school/2022/08/28/work-post.html) </th>
+        <th> [Period](-) </th>
         <th>Start Time</th>
         <th>End Time</th>
     </tr>
