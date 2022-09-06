@@ -1,10 +1,11 @@
-# Monday Bell Schedule
 ---
 categories: [markdown]
 title: Bell Schedule
+layout: post
 ---
 
-<h1>Bell Schedule</h1>
+# Bell Schedule
+
 
 <h2>Monday</h2>
 <table>
