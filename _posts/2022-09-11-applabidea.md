@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: HTML Fragments
 categories: [markdown]
-title: Akshat's HTML Fragments
+title: App Lab Plans
 ---
 
 # AppLab Ideas 
