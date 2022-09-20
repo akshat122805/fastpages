@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: CollegeBoard Video Notes
 categories: [markdown]
-title: Collaboration 1.1 Notes
+title: Collaboration Notes 1.1
 comments: true
 ---
 

@@ -5,30 +5,29 @@ categories: [markdown]
 title: "Psychology and the Good Life Lecture Notes"
 ---
 
-# Psychology and the Good Life
-Laurie Santos is a professor at Yale University who believes that the idea of stratergies humans needed to implement in order to maintain happy lifestyles. 
+# Psychology and the Good Life Notes
 
-# Stratergy 1: We control our well - being
-There is a common misconception that we are stuck in the current well-being we are in, but that is false. We are able to improve our happiness ourselves. From a study by Sonja Lyubomirsky, a psychologist, found that about 50% of our well-being is affected by our genes. This means that the other 50% can be affected by our own doing.
+## Introduction
+  - Yale students and other ivy leaguers have a ton of stress
+  - To make them less stressed, the experiment followed by including the students to engage in happier activities. 
 
-# Stratergy 2: Controlling yourself is the most challenging in having a good well being
-Taking control of your flow of life is the hardest part of becoming happy. Just learning about psychology won't help you become happy, you must put it into practice. For example to become fit, one must workout regularly and consistently to observe results. Same with your well-being, one must make a change that is consistently affecting your life for the better.
+## Insights
+- Healthy practices matter a lot
+- Become wealthy, make a lot of money, it matters a lot
+- Make time for gratitude 
+- Helping others, helps a lot
+- Make time to make more social connections
+- With effort, anything can change!
 
-# Stratergy 3: Social connections are key for happiness
-Nick Eppley and his colleagues at Chicago Business School conducted a study asking people on the subway to stay in a solitary state, a state where one must talk to another the whole ride, or do what ever they want. According to the study, the people who made social connections felt happier than before and those who were solitary felt worse.
+## Conclusion
+- Stress is a huge issue, to cope with it, we must work together and embrace the happy aspects of life. 
 
-# Stratergy 4: Make time to be gratuitous everyday
-Taking time to be thankful about something everyday can improve one's happiness. Just writing a small note about what you are grateful for can bump up your happiness and well-being. It keeps your mind on positivity instead of negativity and it is good for your well-being.
+## Gratitude List
 
-# Stratergy 5: Be present in the moment
-Taking time to realize what you are doing and focusing is important for your well-being. People tend to just go through the motions and rush through the day trying to get everything done, but taking a moment to really comprehend what is going on in your day can bump up your well-being.
-
-# Gratitude Note
-What I wrote to my friend Liav Bar:
-Liav your one of the most hardworking people I know and you extremely humble about your success. You also always support me which makes you a great friend.
-
-Liav's response: 
-I am thankful you wrote this note and I feel the same way about you. I appreciate you and our friendship.
+Here are some things that I am grateful for:
+- Family
+- Money
+- Friends
 
 # Gratitude List
 1. Family
@@ -37,12 +36,20 @@ I am thankful you wrote this note and I feel the same way about you. I appreciat
 4. Access to technology to live an easy lifestyle
 
 # My Mental Health Goals
-1. Everyday live it to the fullest
+1. Grind harder, make more money
 2. Sleep at least 8 hrs per night on average
-3. Eat Healthy
-4. Workout eveyrday
+3. Eat Good and Healthy
+4. Workout and get BUFF.
 
 # Personal Goals I want to achive in my life
-1. Varsity Sport (basketball or track)
-2. Straight As in High School
-3. Goto UCSD
+1. All A's in highschool
+2. Get 33-35 on ACT
+3. MAKE MONEY!!!!
+4. Get better at football, on Varsity. 
+
+# Stress Form
+- Stress Form for high schoolers. Below are statistics for the results of each question.
+
+![]({{site.baseurl}}/images/piechart1.png "https://github.com/fastai/fastpages")
+![]({{site.baseurl}}/images/piechart2.png "https://github.com/fastai/fastpages")
+![]({{site.baseurl}}/images/piechart3.png "https://github.com/fastai/fastpages")
