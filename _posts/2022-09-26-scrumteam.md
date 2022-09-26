@@ -6,7 +6,7 @@ categories: [personal, scrum team, markdown]
 title: Scrum TEAM!
 ---
 
-![]({{site.baseurl}}/images/diagram1.png "OUR SCRUM TEAM")
+![]({{site.baseurl}}/images/scrumteam.png "OUR SCRUM TEAM")
 
 ### The Goal:
 - Create an AI algorithm that takes into account the user's current information and then determines the chance of them getting accepted into a good college.
