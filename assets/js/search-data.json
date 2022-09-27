@@ -236,21 +236,16 @@
   
 
   
-
+      ,"page4": {
+          "title": "HTML Fragments + JS Kernel Table!",
+          "content": "| HTML + JavaScript Table | Stock Generator | .",
+          "url": "https://akshat122805.github.io/fastpages/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
   
 
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
   
 
   
@@ -259,7 +254,23 @@
   
 
   
-      ,"page13": {
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://akshat122805.github.io/fastpages/robots.txt",
