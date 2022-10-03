@@ -1,7 +1,7 @@
 ---
 toc: true
 comments: true
-title: Ivy LEague Calculator - Product Roadmap
+title: Ivy League Calculator - Product Roadmap
 layout: post
 description: Roadmap and Team Design for our Product
 categories: [week5, collegeboard]
@@ -15,15 +15,15 @@ categories: [week5, collegeboard]
 
 - The program's input will be the different factors that change a student's chance of getting into an Ivy league. We will be focusing on the following factors: 
 
-*Intended major
-*GPA
-*SAT/ACT scores
-*Gender
-*Ethnicity
-*Extra Cirriculars
-*Clubs
-*Essay
-*Leadership
+- Intended major
+- GPA
+- SAT/ACT scores
+- Gender
+- Ethnicity
+- Extra Cirriculars
+- Clubs
+- Essay
+- Leadership
 
 # How are we going to do this
 
@@ -31,7 +31,7 @@ The output of the program will be in the format of a percentage chance of gettin
 
 - Brown University
 - Columbia University
-- Cornell Univerisity
+- Cornell University
 - Dartmouth University
 - Harvard University
 - Princeton University
@@ -46,7 +46,7 @@ Furthermore, to get an accurate output, data from multiple sources will be used 
 
 We need to make a aesthetic design, we are going to use bootstrap in synthesis with the normal HTML and CSS.
 
-![]({{site.baseurl}}/images/ivyleague.png"https://github.com/fastai/fastpages")
+<img src="{{site.baseurl}}/images/ivyleague.png">
 
 # Backend Program 
 
