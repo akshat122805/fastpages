@@ -51,6 +51,16 @@ We need to make a aesthetic design, we are going to use bootstrap in synthesis w
 <img src="{{site.baseurl}}/images/slide2.png">
 <img src="{{site.baseurl}}/images/slide3.png">
 
+
+- Program Purpose: To assign the right college for each person and determine if they can get into an ivy league.
+- Data Abstraction: Task the right variables, organize colleges coherently.
+- Managing Complexity: Since we plan on using an API in our project, this means that we will be handling a lot of data, hence organization is required. We plan on doing this with lists and dictionaries to create and format our API in key-value pairs. This will be crucial to the function, organization, and efficiency of our project. 
+- Procedural Abstraction: The search engine will be able to narrow down the results of the different colleges the user may get into. 
+- Algorithm: We are going to create a function that takes user inputs and compares them to a list of data that we have from the API.
+- Testing: Single tests that we can perform on our project can include individually testing each function. That way we don't code everything, mess up and struggle to find the error later.
+
+
+
 # Backend Program 
 
 We are going to use Jupyter notebooks
@@ -58,3 +68,4 @@ We are going to use Jupyter notebooks
 We will use JS and Python.
 
 That's it for now, thanks!
+
