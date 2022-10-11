@@ -47,6 +47,9 @@ Furthermore, to get an accurate output, data from multiple sources will be used 
 We need to make a aesthetic design, we are going to use bootstrap in synthesis with the normal HTML and CSS.
 
 <img src="{{site.baseurl}}/images/ivyleague.png">
+<img src="{{site.baseurl}}/images/slide1.png">
+<img src="{{site.baseurl}}/images/slide2.png">
+<img src="{{site.baseurl}}/images/slide3.png">
 
 # Backend Program 
 
