@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Tools Check/Local Server",
-            "content": "Local Server Running . . Terminal Output . . 4001 Port . I ran the curl command, tried different stuff and troubleshooted, it worked, but I have to change my address to 127.0.0.1:4001/fastpages .",
+            "content": "Local Server Running . . Terminal Output . . 4001 Port . I ran the curl command, tried different stuff and troubleshooted, it worked, but I have to change my address to 127.0.0.1:4001/fastpages . Kernels . . Python Kernel . . JavaScript Kernel . .",
             "url": "https://akshat122805.github.io/fastpages/2022/11/17/toolscheck.html",
             "relUrl": "/2022/11/17/toolscheck.html",
             "date": " • Nov 17, 2022"
