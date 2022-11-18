@@ -1,9 +1,10 @@
 ---
-title: Tools Check/Local Server
+title: Tools Check/Local Server/Test
 layout: default
 description: Local server
 tags: [markdown]
 ---
+# Hello Mr. Mort 
 
 # Local Server Running
 
@@ -24,3 +25,8 @@ I ran the curl command, tried different stuff and troubleshooted, it worked, but
 
 # JavaScript Kernel
 <img src="{{site.baseurl}}/images/python4.png">
+
+testing 
+
+# Bash/All
+<img src="{{site.baseurl}}/images/pic10.png">
