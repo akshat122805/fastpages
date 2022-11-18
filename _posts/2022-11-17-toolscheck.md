@@ -16,3 +16,11 @@ tags: [markdown]
 
 I ran the curl command, tried different stuff and troubleshooted, it worked, but I have to change my address to 127.0.0.1:4001/fastpages
 
+# Kernels
+<img src="{{site.baseurl}}/images/kernel.png">
+
+# Python Kernel
+<img src="{{site.baseurl}}/images/python3.png">
+
+# JavaScript Kernel
+<img src="{{site.baseurl}}/images/python4.png">
