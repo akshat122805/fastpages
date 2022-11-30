@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -306,10 +306,10 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span> <span class="c1"># 50/9+15 = 20.55</span>
-<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span> <span class="c1"># 20.55/50 + 41.11 = 41.521</span>
-<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span> <span class="c1"># 41.521 + 50/5</span>
-<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span> <span class="c1"># 50/9 = 5 remainder --&gt; add 15 = 20</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span> <span class="c1"># 20/50 + 40 = 40.4</span>
+<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span> <span class="c1"># 40.4 + 50/5 - 10 = 40.4</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span> <span class="c1"># 40.4 - 20</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Result</span><span class="p">)</span>
 </pre></div>
 
@@ -452,6 +452,81 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Noun</span> <span class="o">=</span> <span class="s2">"Mr.Mortensen"</span> 
+<span class="n">Adjective</span> <span class="o">=</span> <span class="s2">"handsome"</span> 
+<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">"extremely"</span> 
+<span class="n">Verb</span> <span class="o">=</span> <span class="s2">"is"</span> 
+<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
+<span class="n">yoda</span> <span class="o">=</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Adjective</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">yoda</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mr.Mort is extremely handsome
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">"choclate"</span> 
+<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">"rasin"</span> 
+<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1">#MANUALLY CALCULATED</span>
+<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> 
+<span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie</span><span class="p">,</span> <span class="s2">"vote"</span><span class="p">,</span> <span class="n">len2</span><span class="p">)</span> 
+<span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie2</span><span class="p">,</span> <span class="s2">"vote"</span><span class="p">,</span> <span class="n">len1</span><span class="p">)</span> 
+<span class="n">votes</span> <span class="o">=</span> <span class="s2">"Cookie has "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" and the second Cookie has "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Cookie has 4.0 and the second Cookie has 225
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
