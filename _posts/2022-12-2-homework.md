@@ -1,5 +1,5 @@
 ---
-title: Tools Check/Local Server/Test
+title: table
 layout: default
 description: Local server
 tags: [markdown]
