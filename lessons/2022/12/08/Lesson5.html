@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -215,10 +215,23 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">40</span>
-<span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">currentGrade</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">):</span>
-<span class="k">else</span><span class="p">:</span> <span class="n">quizGrade</span> <span class="o">=</span> <span class="n">currentGrade</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">currentPoints</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How many points did you earn on the retake? (Positive integer"</span><span class="p">))</span>
+<span class="n">quizGrade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How many points did you earn previously for the quiz? (Positive integer)"</span><span class="p">))</span>
+<span class="n">quizTotal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How many points was the quiz out of? (Positive integer"</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">quizReplace</span><span class="p">(</span><span class="n">currentPoints</span><span class="p">,</span> <span class="n">quizGrade</span><span class="p">,</span> <span class="n">quizTotal</span><span class="p">):</span>
+    <span class="n">quizGrade</span> <span class="o">=</span> <span class="p">(</span><span class="n">quizGrade</span><span class="o">/</span><span class="n">quizTotal</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="n">quizTotal</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">currentGrade</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">):</span>
+        <span class="n">quizGrade</span> <span class="o">=</span> <span class="n">currentGrade</span>
+    <span class="k">return</span> <span class="n">quizGrade</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your new grade on the quiz is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">quizReplace</span><span class="p">(</span><span class="n">currentPoints</span><span class="p">,</span> <span class="n">quizGrade</span><span class="p">,</span> <span class="n">quizTotal</span><span class="p">)))</span> <span class="o">+</span> <span class="s2">"%"</span><span class="p">)</span>
+
+<span class="c1"># inputted: currentPoints = 30</span>
+<span class="c1">#           quizGrade = 25</span>
+<span class="c1">#           quizTotal = 30</span>
 </pre></div>
 
     </div>
@@ -230,12 +243,8 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [4]</span>
-<span class="ansi-red-fg">    if currentGrade &gt; quizGrade</span>
-                               ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your new grade on the quiz is 100%
 </pre>
 </div>
 </div>
