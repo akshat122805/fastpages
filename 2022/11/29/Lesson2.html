@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -118,7 +118,15 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#Algorithms">Algorithms </a></li>
-<li class="toc-entry toc-h1"><a href="#Operations">Operations </a></li>
+<li class="toc-entry toc-h1"><a href="#Operations">Operations </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Strings">Strings </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Problem-2-solved">Problem 2 solved </a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Variables">Variables </a></li>
 <li class="toc-entry toc-h1"><a href="#Sequencing">Sequencing </a></li>
 <li class="toc-entry toc-h1"><a href="#String">String </a></li>
@@ -167,9 +175,55 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">num2</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span>                    <span class="c1"># num2 = 20</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span>       <span class="c1"># num3 = 20/50 + 40 = 40.4</span>
+<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span>             <span class="c1"># num4 = 40.4 + 10 - 10</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span>                    <span class="c1"># Result = 40.4 - 20 = 20.4</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>                     <span class="c1"># num2 = 1 * 4 = 4</span>
+<span class="n">Num1</span> <span class="o">=</span> <span class="n">Num2</span>                             <span class="c1"># num1 = 4</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">*</span> <span class="mi">3</span>                         <span class="c1"># num3 = 4 * 3 = 12</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">%</span> <span class="mi">2</span>                       <span class="c1"># Result = 0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">valueA</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">valueB</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">valueC</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">valueB</span> <span class="o">=</span> <span class="n">valueC</span> <span class="o">-</span> <span class="n">valueA</span>                <span class="c1"># valueB = 17 - 4 = 13</span>
+<span class="n">valueA</span> <span class="o">=</span> <span class="n">valueA</span> <span class="o">*</span> <span class="mi">10</span>                    <span class="c1"># valueA = 4 * 10 = 40</span>
+<span class="k">if</span> <span class="n">valueB</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>                         <span class="c1"># valueB is 13, which is greater than 10</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">valueC</span><span class="p">)</span>                       <span class="c1"># This will print 17</span>
 </pre></div>
 
     </div>
@@ -181,12 +235,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>30</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>17
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -195,6 +247,72 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span> <span class="o">=</span> <span class="s2">"curly"</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">"brown"</span>
+<span class="n">length</span> <span class="o">=</span> <span class="s2">"short"</span>
+<span class="nb">type</span> <span class="o">=</span> <span class="s2">"straight"</span>
+<span class="n">hair</span> <span class="o">=</span> <span class="nb">type</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="n">length</span>           
+<span class="nb">print</span><span class="p">(</span><span class="n">hair</span><span class="p">)</span>                             
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>straightbrownshort
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Strings">
+<a class="anchor" href="#Strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings<a class="anchor-link" href="#Strings"> </a>
+</h2>
+<ul>
+<li>Collection of character (#s, letters, spaces, special characters)</li>
+<li>procedures can be used with strings<ul>
+<li>len() finds length of strings</li>
+</ul>
+</li>
+<li>concatenation combines strings<ul>
+<li>concat("cookie", "monster") outputs "cookiemonster"</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Problem-2-solved">
+<a class="anchor" href="#Problem-2-solved" aria-hidden="true"><span class="octicon octicon-link"></span></a>Problem 2 solved<a class="anchor-link" href="#Problem-2-solved"> </a>
+</h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -544,7 +662,7 @@ window.onload = wrap_img;
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="/fastpages/feed.xml">
+          <a href="https://akshat122805.github.io/fastpages/feed.xml">
             <svg class="svg-icon orange">
               <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
