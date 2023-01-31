@@ -1,5 +1,5 @@
 ---
-title: CPT Projecy
+title: CPT Project
 description: Game-Plan!!!!
 toc: true
 comments: true
