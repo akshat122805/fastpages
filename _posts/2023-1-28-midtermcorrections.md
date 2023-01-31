@@ -9,13 +9,13 @@ categories: [markdown]
 
 # Proof
 
-![Proof of MCQ](../images/mcqproof.png)
+![s2](/images/mcqproof.png)
 
 # Test Corrections
 
 # Question 1
 
-![Q1](../images/Q1.jpg)
+![s2](/images/Q1.jpg)
 
 My answer: B, x=1, y=3, z=2
 
@@ -27,7 +27,7 @@ This answer is correct because the procedure sets z as the maximum, causing it n
 
 # Question 27
 
-![Q27](../images/Q27.jpg)
+![s2](/images/Q27.jpg)
 
 My answer: C)
 
@@ -39,7 +39,8 @@ Correct answer: D)
 
 # Question 45
 
-![Q45](../images/Q45.jpg)
+![s2](/images/Q45.jpg)
+
 
 My answer: A, When the problem can be solved in a reasonable time and an approximate solution is acceptable.
 
