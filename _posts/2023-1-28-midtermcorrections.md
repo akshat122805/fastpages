@@ -1,11 +1,10 @@
 ---
-title: Trimester 2 Midterm MCQ Corrections
-description: Week 20 MCQ (Error Corrections)
+title: Midterm MCQ Corrections
+description: 50 MCQ Correction (47/50)
 toc: true
 comments: true
 layout: post
-permalink: /week20/errCorr
-categories: [week 20]
+categories: [markdown]
 ---
 
 # Proof
