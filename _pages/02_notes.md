@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: CSP Notes
 categories: [notes]
 permalink: /notes/
