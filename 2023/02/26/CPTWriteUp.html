@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CPT Final Project Writeup - Pong/Additional Features | Akshat’s FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="CPT Final Project Writeup - Pong/Additional Features" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="TripleAJ Tri 2 CPT Final Project" />
+<meta property="og:description" content="TripleAJ Tri 2 CPT Final Project" />
+<link rel="canonical" href="https://akshat122805.github.io/fastpages/2023/02/26/CPTWriteUp.html" />
+<meta property="og:url" content="https://akshat122805.github.io/fastpages/2023/02/26/CPTWriteUp.html" />
+<meta property="og:site_name" content="Akshat’s FastPages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-26T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CPT Final Project Writeup - Pong/Additional Features" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-26T00:00:00-06:00","datePublished":"2023-02-26T00:00:00-06:00","description":"TripleAJ Tri 2 CPT Final Project","headline":"CPT Final Project Writeup - Pong/Additional Features","mainEntityOfPage":{"@type":"WebPage","@id":"https://akshat122805.github.io/fastpages/2023/02/26/CPTWriteUp.html"},"url":"https://akshat122805.github.io/fastpages/2023/02/26/CPTWriteUp.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://akshat122805.github.io/fastpages/feed.xml" title="Akshat's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Akshat&#39;s FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/notes/">CSP Notes</a><a class="page-link" href="/fastpages/categories/">Tags</a><a class="page-link" href="/fastpages/_pages/04_bellschedule.html">Bell Schedule</a><a class="page-link" href="/fastpages/notes/">HTML Fragments + JS Kernel Table!</a><a class="page-link" href="/fastpages/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="introduction">Introduction</h1>
+
+<p>For this post, you will explore the process of development for the game of pong. one of the four major features of our project: TripleAJ Arcade</p>
+
+<p>Additionally this post will explore and try to fulfill as many CPT requirements issued by CollegeBoard.</p>
+
+<p>This post will also explore the other features we worked on outside of our games as well.</p>
+
+<p><img src="/fastpages/images/logofinalaj.png" /></p>
+
+<h1 id="cpt-submission---3a">CPT Submission - 3A</h1>
+
+<h2 id="3ai">3.a.i</h2>
+
+<blockquote>
+  <p>My program presents an an interactive arcade game called, “Pong” to serve as entertainment for the user.</p>
+</blockquote>
+
+<h2 id="3aii">3.a.ii</h2>
+
+<blockquote>
+  <p>The user must first pay 10 AJ Tokens (our arcade currency system) in order to play Pong, this will be at the start screen that we decided.</p>
+</blockquote>
+
+<blockquote>
+  <p>The program allows a user to play ping pong against an AI, there are two paddles constantly hitting a ball to one another. Whoever scores 7 first, wins! T</p>
+</blockquote>
+
+<blockquote>
+  <p>If the user loses, he/she/they have lost 10 tokens from their total balance. If the user wins, they win 15 tokens for beating the AI, the 15 tokens will be added to their balance along with the 10 tokens reimbursed when the user paid to play at the start. This will be seen at the end screen, the user will also have an option to play the game again in efforts to win their tokens back or to simply have fun.</p>
+</blockquote>
+
+<h1 id="3aiii">3.a.iii</h1>
+
+<blockquote>
+  <p>The controls for my game is simply the mouse moving up and down. We believe controlling the mouse is the easiest way to play the game rather than constantly clicking, “W/A/S/D”.</p>
+</blockquote>
+
+<blockquote>
+  <p>The input for our login system (we discuss this later) is your UID, password, and username.</p>
+</blockquote>
+
+<h1 id="cpt-submission---3b">CPT Submission - 3B</h1>
+
+<h2 id="3bi---token-system-code-for-pong">3.b.i - Token System Code For Pong</h2>
+
+<blockquote>
+  <p>INSERT PHOTO</p>
+</blockquote>
+
+<h2 id="3bii---leaderboard-code">3.b.ii - Leaderboard Code</h2>
+
+<blockquote>
+  <p>INSERT PHOTO</p>
+</blockquote>
+
+<h1 id="3biii---lists-for-leaderboard--token-system">3.b.iii - Lists for Leaderboard &amp; Token System</h1>
+
+<blockquote>
+  <p>For games, it would not make sense to create a list within the game, so here is what we did: We created a token system in which the amount of token you have in balance will be stated in the leaderboard. This is our primary list connecting all of our 4 features. The token system is different however for each game, for my game, Pong, you either end up winning 15 tokens or losing 10 tokens. This update in winnings/losings will be shown in our leaderboard regarding the total amount of tokens.</p>
+</blockquote>
+
+<h1 id="3biv---ability">3.b.iv - Ability</h1>
+
+<blockquote>
+  <p>We have the ability to store as many users on the leaderboard as well as have the entire Mortensen class play all of our games and earn tokens. Our leaderboard contains username, amount of tokens, and rank.</p>
+</blockquote>
+
+<h1 id="3bv---how-the-leaderboard-works">3.b.v - How the Leaderboard works</h1>
+
+<blockquote>
+  <p>The leaderboard is a live list that updates every 3-4 seconds, it basically fetches the updates amount of tokens for the specific user from the backend and sends it to the frontend, which is our live leaderboard.</p>
+</blockquote>
+
+<p><img src="/fastpages/images/leaderboard.png" /></p>
+
+<h1 id="cpt-submission---3c">CPT Submission - 3C</h1>
+
+<h2 id="3ci">3.c.i</h2>
+
+<blockquote>
+  <p>Insert photo</p>
+</blockquote>
+
+<h2 id="3cii">3.c.ii</h2>
+
+<blockquote>
+  <p>Insert photo</p>
+</blockquote>
+
+<h2 id="3ciii---crud">3.c.iii - CRUD</h2>
+
+<blockquote>
+  <p>In order to play Pong, you must login or signup, this is another entirely different feature that our group worked on. Our Create links to creating a new account when signing up, our read is basically seeing the account you created on the backend flask. We have 5 different update features, 4 for our games regarding its token system, and 1 special update feature for changing you password. The POST function allows users to create new results for the leaderboard when playing games which is then “READ” by the leaderboard.</p>
+</blockquote>
+
+<h2 id="3civ---selection-iteration-sequencing">3.c.iv - Selection, Iteration, Sequencing</h2>
+
+<h3 id="selection">Selection:</h3>
+
+<ul>
+  <li>
+    <p>Determining which player wins a point based on hpw the game ends. In this case, the game ends at 7 no matter what, so we made this a rule and a selection.</p>
+  </li>
+  <li>
+    <p>Checking if the ball hits a wall or a paddle, and if so, changing its direction accordingly.</p>
+  </li>
+  <li>
+    <p>Same starting direction of the ball at the beginning of each round.</p>
+  </li>
+</ul>
+
+<h3 id="iteration">Iteration</h3>
+
+<ul>
+  <li>
+    <p>Updating the position of the ball and the paddles on each frame of the game loop.</p>
+  </li>
+  <li>
+    <p>Checking if the ball collides with any other objects (walls, paddles) on each frame of the game loop.</p>
+  </li>
+  <li>
+    <p>Checking if a player has scored a point on each frame of the game loop.</p>
+  </li>
+</ul>
+
+<h3 id="sequencing">Sequencing</h3>
+
+<ul>
+  <li>
+    <p>Displaying the game menu when the game is first loaded.</p>
+  </li>
+  <li>
+    <p>Waiting for the user to press the “start game” button before beginning the game loop.</p>
+  </li>
+  <li>
+    <p>Displaying the winner of the game and updating the leaderboard after the game loop has ended.</p>
+  </li>
+</ul>
+
+<h1 id="cpt-submission---3d">CPT Submission - 3D</h1>
+
+<h2 id="3di---calls-for-crud">3.d.i - Calls for CRUD</h2>
+
+<blockquote>
+  <p>Create: When a new user registers on your website, a POST call is made to the backend to create a new user account. The user provides their email address and a password, which are stored in the backend database. The server then generates a unique user ID and returns it to the client as a response.</p>
+</blockquote>
+
+<blockquote>
+  <p>Read: When a user logs in to your website, a GET call is made to the backend to retrieve their account information. The server checks the user’s email and password against the database, and if the credentials are valid, the server returns the user’s account information (including their current token balance) to the client.</p>
+</blockquote>
+
+<blockquote>
+  <p>Update: When a user updates their password, a PUT call is made to the backend to update the user’s account information in the database. The user provides their old password and a new password, and the server checks that the old password is valid before updating the user’s account information with the new password.</p>
+</blockquote>
+
+<blockquote>
+  <p>Delete: If a user chooses to delete their account, a DELETE call is made to the backend to delete the user’s account information from the database. The server checks the user’s email and password against the database to verify their identity before deleting their account information.</p>
+</blockquote>
+
+<h2 id="3dii---calls-for-conditions">3.d.ii - Calls for Conditions</h2>
+
+<ul>
+  <li>
+    <p>First call test the conditions and has idiot proofing for sign up, checks everything and then also verifies if the user has enough tokens to play pong.</p>
+  </li>
+  <li>
+    <p>Second call for conditions is to verify that the backend has received an update in token balance, and that update will be sent to the frontend, to our leaderboard.</p>
+  </li>
+</ul>
+
+<h2 id="3diii---results-of-calls">3.d.iii - Results of Calls</h2>
+
+<ul>
+  <li>
+    <p>First call results - Allows uers to create account, play games, view leaderboard, earn tokens, etc.</p>
+  </li>
+  <li>
+    <p>Second call resultS: Allows website to be updates through JS fetch and allows for all users to see the website constantly updating and functioning.</p>
+  </li>
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://akshat122805.github.io/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
