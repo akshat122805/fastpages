@@ -73,7 +73,6 @@ This post will also explore the other features we worked on outside of our games
 
 <img src="{{site.baseurl}}/images/gettokens.png">
 
-
 <br>
 
 ## 3.b.ii - Removing Tokens 
@@ -82,23 +81,23 @@ This post will also explore the other features we worked on outside of our games
 
 <br>
 
-# 3.b.iii - Lists for Leaderboard & Token System
+# 3.b.iii 
 
-> For games, it would not make sense to create a list within the game, so here is what we did: We created a token system in which the amount of token you have in balance will be stated for playing Pong. This is our primary list connecting all of our 4 features. The token system is different however for each game, for my game, Pong, you either end up winning 15 tokens or losing 10 tokens. This update in winnings/losings will be shown in our leaderboard regarding the total amount of tokens. 
-
-<br>
-
-# 3.b.iv - Ability
-
-> We have the ability to store as many users on the leaderboard as well as have the entire Mortensen class play all of our games and earn tokens. Our leaderboard contains username, amount of tokens, and rank.
+> The variable representing local storage is "tokenAmt". For the first block, tokenAmt is in 117 and tokenAmt for localstorage in the second blog is found in line 128. 
 
 <br>
 
-# 3.b.v - How the Leaderboard works for Pong
-
-> Managing Complexity is also present in Pong, it shows how Pong has all sorts of different factors like ball speed, paddle size, and so much more. 
+# 3.b.iv
+> The information that is saved in the local storage as tokenAmt is crucial for the program to function properly. It indicates the total number of tokens that the user possesses, which is required for carrying out mathematical operations to update the token balance after the user has played the game and earned more tokens based on their performance. Therefore, this data plays a key role in the proper functioning of the program.
 
 <br>
+
+# 3.b.v 
+
+The current use of local storage in the program is a reliable and efficient method for storing and updating the user's token balance. This approach allows for easy retrieval and modification of data, making it a simple and effective way to manage the user's token balance. However, an alternative approach could involve fetching the user's token balance every time the game requires an update. This alternative approach would not be as efficient, as it would require more computing power and would be less convenient to update. Therefore, local storage is the preferred option, as it offers a more streamlined and efficient solution to managing the user's token balance.
+
+<br>
+
 # CPT Submission - 3C
 
 ## 3.c.i
