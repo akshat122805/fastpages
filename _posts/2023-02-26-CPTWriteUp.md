@@ -71,13 +71,14 @@ This post will also explore the other features we worked on outside of our games
 
 ## 3.b.i - Token System Code For Pong
 
->INSERT PHOTO
+<img src="{{site.baseurl}}/images/gettokens.png">
+
 
 <br>
 
-## 3.b.ii - Leaderboard Code
+## 3.b.ii - Removing Tokens 
 
->INSERT PHOTO
+<img src="{{site.baseurl}}/images/remtokens.png">
 
 <br>
 
@@ -102,11 +103,10 @@ This post will also explore the other features we worked on outside of our games
 
 ## 3.c.i
 
->Insert photo
+<img src="{{site.baseurl}}/images/3cone.png">
+<img src="{{site.baseurl}}/images/3cone2.png">
 
 ## 3.c.ii
-
->Insert photo
 
 <br>
 
