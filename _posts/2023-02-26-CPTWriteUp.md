@@ -17,6 +17,30 @@ This post will also explore the other features we worked on outside of our games
 
 <br>
 
+# Video
+<br>
+<div class="embed-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A9y6oD2HlVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<br>
+
 # CPT Submission - 3A 
 
 ## 3.a.i
@@ -59,7 +83,7 @@ This post will also explore the other features we worked on outside of our games
 
 # 3.b.iii - Lists for Leaderboard & Token System
 
-> For games, it would not make sense to create a list within the game, so here is what we did: We created a token system in which the amount of token you have in balance will be stated in the leaderboard. This is our primary list connecting all of our 4 features. The token system is different however for each game, for my game, Pong, you either end up winning 15 tokens or losing 10 tokens. This update in winnings/losings will be shown in our leaderboard regarding the total amount of tokens. 
+> For games, it would not make sense to create a list within the game, so here is what we did: We created a token system in which the amount of token you have in balance will be stated for playing Pong. This is our primary list connecting all of our 4 features. The token system is different however for each game, for my game, Pong, you either end up winning 15 tokens or losing 10 tokens. This update in winnings/losings will be shown in our leaderboard regarding the total amount of tokens. 
 
 <br>
 
