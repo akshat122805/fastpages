@@ -108,6 +108,8 @@ This post will also explore the other features we worked on outside of our games
 
 ## 3.c.ii
 
+<img src="{{site.baseurl}}/images/3ctwo.png">
+
 <br>
 
 ## 3.c.iii - CRUD
