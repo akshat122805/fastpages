@@ -53,12 +53,9 @@ This post will also explore the other features we worked on outside of our games
 
 > We have the ability to store as many users on the leaderboard as well as have the entire Mortensen class play all of our games and earn tokens. Our leaderboard contains username, amount of tokens, and rank.
 
-# 3.b.v - How the Leaderboard works
+# 3.b.v - How the Leaderboard works for Pong
 
-> The leaderboard is a live list that updates every 3-4 seconds, it basically fetches the updates amount of tokens for the specific user from the backend and sends it to the frontend, which is our live leaderboard. 
-
-<img src="{{site.baseurl}}/images/leaderboard.png">
-
+> Managing Complexity is also present in Pong, it shows how Pong has all sorts of different factors like ball speed, paddle size, and so much more. 
 
 # CPT Submission - 3C
 
