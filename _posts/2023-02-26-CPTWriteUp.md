@@ -45,25 +45,25 @@ This post will also explore the other features we worked on outside of our games
 
 ## 3.a.i
 
-> My program presents an an interactive arcade game called, "Pong" to serve as entertainment for the user. 
+My program presents an an interactive arcade game called, "Pong" to serve as entertainment for the user. 
 
 <br>
 
 ## 3.a.ii
 
-> The user must first pay 10 AJ Tokens (our arcade currency system) in order to play Pong, this will be at the start screen that we decided. 
+The user must first pay 10 AJ Tokens (our arcade currency system) in order to play Pong, this will be at the start screen that we decided. 
 
-> The program allows a user to play ping pong against an AI, there are two paddles constantly hitting a ball to one another. Whoever scores 7 first, wins! T
+The program allows a user to play ping pong against an AI, there are two paddles constantly hitting a ball to one another. Whoever scores 7 first, wins! 
 
-> If the user loses, he/she/they have lost 10 tokens from their total balance. If the user wins, they win 15 tokens for beating the AI, the 15 tokens will be added to their balance along with the 10 tokens reimbursed when the user paid to play at the start. This will be seen at the end screen, the user will also have an option to play the game again in efforts to win their tokens back or to simply have fun. 
+If the user loses, he/she/they have lost 10 tokens from their total balance. If the user wins, they win 15 tokens for beating the AI, the 15 tokens will be added to their balance along with the 10 tokens reimbursed when the user paid to play at the start. This will be seen at the end screen, the user will also have an option to play the game again in efforts to win their tokens back or to simply have fun. 
 
 <br>
 
 # 3.a.iii
 
-> The controls for my game is simply the mouse moving up and down. We believe controlling the mouse is the easiest way to play the game rather than constantly clicking, "W/A/S/D". 
+The controls for my game is simply the mouse moving up and down. We believe controlling the mouse is the easiest way to play the game rather than constantly clicking, "W/A/S/D". 
 
-> The input for our login system (we discuss this later) is your UID, password, and username. 
+The input for our login system (we discuss this later) is your UID, password, and username. 
 
 <br>
 
@@ -83,7 +83,7 @@ This post will also explore the other features we worked on outside of our games
 
 # 3.b.iii 
 
-> The variable representing local storage is "tokenAmt". For the first block, tokenAmt is in 117 and tokenAmt for localstorage in the second blog is found in line 128. 
+The variable representing local storage is "tokenAmt". For the first block, tokenAmt is in 117 and tokenAmt for localstorage in the second blog is found in line 128. 
 
 <br>
 
@@ -111,37 +111,25 @@ The current use of local storage in the program is a reliable and efficient meth
 
 <br>
 
-## 3.c.iii - CRUD
+## 3.c.iii 
 
-> In order to play Pong, you must login or signup, this is another entirely different feature that our group worked on. Our Create links to creating a new account when signing up, our read is basically seeing the account you created on the backend flask. We have 5 different update features, 4 for our games regarding its token system, and 1 special update feature for changing you password. The POST function allows users to create new results for the leaderboard when playing games which is then "READ" by the leaderboard. 
+The first code block demonstrates a function called "collision" that accepts two parameters "b" and "p". The function is used to detect a collision between a ball and a paddle in the game of Pong.
+
+To achieve this, the function determines the top, bottom, left, and right positions of both the ball and the paddle and checks for overlapping positions between them. The function returns a Boolean value indicating whether a collision has occurred or not, based on the four boundaries of the ball and paddle.
+
+This function plays a crucial role in the Pong game mechanics as it enables the game to detect and respond to collisions between the ball and paddle objects. The use of this function is an example of procedural abstraction, as it abstracts away the details of the collision detection process, allowing the programmer to focus on other aspects of the game development.
+
+The second code block checks for collisions between the ball and the player paddle in the game of Pong, using a "collision" function. If a collision is detected, the code plays a sound effect, calculates the point of collision, and uses it to determine the angle of reflection for the ball using different functions. It then determines the direction of the ball based on which half of the paddle it collided with, updates the velocity of the ball with the new angle and direction, and increases its speed to simulate acceleration. 
 
 <br>
 
 ## 3.c.iv - Selection, Iteration, Sequencing 
 
-### Selection:
+This code has sequencing because it executes a series of steps in a particular order to render the game of Pong on the canvas. First, it clears the canvas using the "drawRect" function with a black color. Then, it draws the user's score on the left side of the canvas and the computer opponent's score on the right side of the canvas using the "drawText" function. 
 
-- Determining which player wins a point based on hpw the game ends. In this case, the game ends at 7 no matter what, so we made this a rule and a selection. 
+After that, it draws the net using the "drawNet" function, which can be seen as a dotted line that is constantly looping and resetting after every score, this is shown as iteration. 
 
-- Checking if the ball hits a wall or a paddle, and if so, changing its direction accordingly.
-
-- Same starting direction of the ball at the beginning of each round.
-
-### Iteration 
-
-- Updating the position of the ball and the paddles on each frame of the game loop.
-
-- Checking if the ball collides with any other objects (walls, paddles) on each frame of the game loop.
-
-- Checking if a player has scored a point on each frame of the game loop.
-
-### Sequencing 
-
-- Displaying the game menu when the game is first loaded.
-
-- Waiting for the user to press the "start game" button before beginning the game loop.
-
-- Displaying the winner of the game and updating the leaderboard after the game loop has ended.
+Next, it draws the user's paddle and the computer opponent's paddle using the "drawRect" function with their respective properties. Finally, it draws the ball using the "drawArc" function with its position and radius. Through what I explained just now, there is selection in the function render() code block as it uses conditional statements to decide which direction the ball will move and whether the player or the computer has scored.
 
 <br>
 
