@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      14 min read
+      15 min read
     
 </span></p>
 
@@ -38,11 +38,12 @@
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Create-Method-with-User-Inputs">Create Method with User Inputs </a></li>
-<li class="toc-entry toc-h2"><a href="#Read-Method">Read Method </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Reading-Database-after-Deleting">Reading Database after Deleting </a></li>
+<li class="toc-entry toc-h2"><a href="#Read-Method">Read Method </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h1"><a href="#Update-Method">Update Method </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Reading-Database-after-Deleting">Reading Database after Deleting </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1098,6 +1099,73 @@ Created new player Magic Johnson
 {"id": 5, "name": "Akshat Parikh", "points": 20, "assists": 3, "rebounds": 2}
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Update-Method">
+<a class="anchor" href="#Update-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update Method<a class="anchor-link" href="#Update-Method"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">put</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the name of the player you want to edit"</span><span class="p">))</span>
+    <span class="n">pts</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the player's new amount of points."</span><span class="p">))</span>
+    <span class="n">ast</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the player's new amount of assists."</span><span class="p">))</span>
+    <span class="n">reb</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the player's new amount of rebounds."</span><span class="p">))</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+        <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"points"</span><span class="p">:</span> <span class="n">pts</span><span class="p">,</span> <span class="s2">"assists"</span><span class="p">:</span> <span class="n">ast</span><span class="p">,</span> <span class="s2">"rebounds"</span><span class="p">:</span> <span class="n">reb</span><span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="c1"># get what needs to be updated</span>
+    <span class="n">player</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="c1"># get the player (using the name in this case)</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="n">player</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span> <span class="c1"># save the changes to the database</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> at id </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2"> has been updated"</span>
+
+<span class="n">put</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Before update: {'id': 5, 'name': 'Akshat Parikh', 'points': 20, 'assists': 3, 'rebounds': 2}
+After update: {'id': 5, 'name': 'Akshat Parikh', 'points': 20, 'assists': 3, 'rebounds': 2}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'Akshat Parikh at id 5 has been updated'</pre>
+</div>
+
 </div>
 
 </div>
