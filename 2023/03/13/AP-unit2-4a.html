@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      14 min read
     
 </span></p>
 
@@ -32,11 +32,7 @@
 <ul>
 <li class="toc-entry toc-h2"><a href="#Flask-and-SQL-Config">Flask and SQL Config </a></li>
 <li class="toc-entry toc-h2"><a href="#Defining-the-'Player'-Class">Defining the &#39;Player&#39; Class </a></li>
-<li class="toc-entry toc-h2"><a href="#Initializing-the-DB">Initializing the DB </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#Defining-a-function-to-identify-a-row-by-"name"-attribute">Defining a function to identify a row by &quot;name&quot; attribute </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#Initializing-the-DB">Initializing the DB </a></li>
 <li class="toc-entry toc-h2"><a href="#Create-Method-with-User-Inputs">Create Method with User Inputs </a></li>
 <li class="toc-entry toc-h2"><a href="#Read-Method">Read Method </a></li>
 </ul>
@@ -953,35 +949,6 @@ Created new player Magic Johnson
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id='Defining-a-function-to-identify-a-row-by-"name"-attribute'>
-<a class="anchor" href="#Defining-a-function-to-identify-a-row-by-" name aria-hidden="true"><span class="octicon octicon-link"></span></a>Defining a function to identify a row by "name" attribute<a class="anchor-link" href="#Defining-a-function-to-identify-a-row-by-%22name%22-attribute"> </a>
-</h3>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
-        <span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">_name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">player</span> <span class="c1"># returns user object</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
