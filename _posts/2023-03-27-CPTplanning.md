@@ -4,7 +4,7 @@ layout: base
 description: Tri 2 MCQ Final Corrections
 tags: [markdown]
 ---
-
+# CPT Planning
     User authentication and game score tracking: Allow users to create accounts, log in, and track their scores and progress in the game.
 
     Multiple game modes: Provide users with different game modes, such as single-player, multiplayer, time-attack, survival, and others.
