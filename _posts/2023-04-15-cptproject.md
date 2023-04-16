@@ -1,3 +1,11 @@
+---
+title: CPT Project (Individual)
+layout: base
+description: Music Personality Quiz
+tags: [markdown]
+---
+
+
 <div data-aos="fade-right">
 <h2>Musical Preference Quiz</h2>
 <div id="question1">
