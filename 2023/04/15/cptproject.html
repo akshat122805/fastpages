@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="CPT Project (Individual)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Music Personality Quiz" />
-<meta property="og:description" content="Music Personality Quiz" />
+<meta name="description" content="Music Personality" />
+<meta property="og:description" content="Music Personality" />
 <link rel="canonical" href="https://akshat122805.github.io/fastpages/2023/04/15/cptproject.html" />
 <meta property="og:url" content="https://akshat122805.github.io/fastpages/2023/04/15/cptproject.html" />
 <meta property="og:site_name" content="Akshat’s FastPages" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="CPT Project (Individual)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-15T00:00:00-05:00","datePublished":"2023-04-15T00:00:00-05:00","description":"Music Personality Quiz","headline":"CPT Project (Individual)","mainEntityOfPage":{"@type":"WebPage","@id":"https://akshat122805.github.io/fastpages/2023/04/15/cptproject.html"},"url":"https://akshat122805.github.io/fastpages/2023/04/15/cptproject.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-15T00:00:00-05:00","datePublished":"2023-04-15T00:00:00-05:00","description":"Music Personality","headline":"CPT Project (Individual)","mainEntityOfPage":{"@type":"WebPage","@id":"https://akshat122805.github.io/fastpages/2023/04/15/cptproject.html"},"url":"https://akshat122805.github.io/fastpages/2023/04/15/cptproject.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://akshat122805.github.io/fastpages/feed.xml" title="Akshat's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -197,30 +197,55 @@ if (savedMusic) {
   </select>
   <button id="submit-button">Remove</button>
 </div>
-
 <script>
   const submitButton = document.getElementById('submit-button');
   const musicSelect = document.getElementById('music-select');
-  let musicList = ["90's Hip-Hop", "Rock N Roll","Modern Rap/Street Drill","UK Drill","Classical Music","Classical Jazz","Pop Music","Old Style Soul","EDM" "Country/Folk","Blues","K-POP","Funk",
-  "Salsa","Goth","Latin/Spanish","French Classical","Jamaican","Japanese Classical","Bollywood Music","Iranian Music","Chinese Folk","Opera","Heavy Metal","2000's Rap","Mashed Soul & Rap",
-  "Upbeat","Poprock","Hawaiian/Islander Music"];
-
-  submitButton.addEventListener('click', function() {
-    const selectedGenre = musicSelect.value;
-    removeGenre(selectedGenre);
-  });
-
-  function removeGenre(genre) {
-    musicList = musicList.filter(item => item !== genre);
-    console.log(`Removing genre: ${genre}`);
-    console.log(`Updated music list: ${musicList}`);
-  }
-
+  let musicList = 
+  ["90's Hip-Hop",
+  "Rock N Roll",
+  "Modern Rap/Street Drill",
+  "UK Drill",
+  "Classical Music",
+  "Classical Jazz",
+  "Pop Music",
+  "Old Style Soul",
+  "EDM",
+  "Country/Folk",
+  "Blues",
+  "K-POP",
+  "Funk",
+  "Salsa",
+  "Goth",
+  "Latin/Spanish",
+  "French Classical",
+  "Jamaican",
+  "Japanese Classical",
+  "Bollywood Music",
+  "Iranian Music",
+  "Chinese Folk",
+  "Opera",
+  "Heavy Metal",
+  "2000's Rap",
+  "Mashed Soul & Rap",
+  "Upbeat",
+  "Poprock",
+  "Hawaiian/Islander Music"];
+const submitButton = document.getElementById('submit-button');
+const musicSelect = document.getElementById('music-select');
+submitButton.addEventListener('click', function () {
+  const selectedMusic = musicSelect.value;
+  removeMusic(selectedMusic);
+});
+function removeMusic(music) {
+  musicList = musicList.filter(item => item !== music);
+  console.log(`Removing music genre: ${music}`);
+  console.log(`Updated music list: ${musicList}`);
+}
 </script>
 
 <script>
     // Music list
-var musicList = ["90's Hip-Hop", "Rock N Roll","Modern Rap/Street Drill","UK Drill","Classical Music","Classical Jazz","Pop Music","Old Style Soul","EDM" "Country/Folk","Blues","K-POP","Funk","Salsa","Goth","Latin/Spanish","French Classical","Jamaican","Japanese Classical","Bollywood Music","Iranian Music","Chinese Folk","Opera","Heavy Metal","2000's Rap","Mashed Soul & Rap","Upbeat","Poprock","Hawaiian/Islander Music"];
+var musicList = ["90's Hip-Hop", "Rock N Roll", "Modern Rap/Street Drill", /* Add the rest of the genres */];
 // Sets the current question
 var currentQuestion = 1;
 // Array for the answers to the questions
@@ -232,6 +257,7 @@ function answer(response) {
   answers[currentQuestion - 1] = response;
   document.getElementById("question" + currentQuestion).style.display = "none";
   currentQuestion++;
+
   if (currentQuestion <= 6) {
     document.getElementById("question" + currentQuestion).style.display = "block";
   } else {
