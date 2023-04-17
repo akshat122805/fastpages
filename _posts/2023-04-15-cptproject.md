@@ -1,7 +1,7 @@
 ---
 title: CPT Project (Individual)
 layout: base
-description: Music Personality Quiz
+description: Music Personality
 tags: [markdown]
 ---
 
@@ -133,30 +133,55 @@ if (savedMusic) {
   </select>
   <button id="submit-button">Remove</button>
 </div>
-
 <script>
   const submitButton = document.getElementById('submit-button');
   const musicSelect = document.getElementById('music-select');
-  let musicList = ["90's Hip-Hop", "Rock N Roll","Modern Rap/Street Drill","UK Drill","Classical Music","Classical Jazz","Pop Music","Old Style Soul","EDM" "Country/Folk","Blues","K-POP","Funk",
-  "Salsa","Goth","Latin/Spanish","French Classical","Jamaican","Japanese Classical","Bollywood Music","Iranian Music","Chinese Folk","Opera","Heavy Metal","2000's Rap","Mashed Soul & Rap",
-  "Upbeat","Poprock","Hawaiian/Islander Music"];
-
-  submitButton.addEventListener('click', function() {
-    const selectedGenre = musicSelect.value;
-    removeGenre(selectedGenre);
-  });
-
-  function removeGenre(genre) {
-    musicList = musicList.filter(item => item !== genre);
-    console.log(`Removing genre: ${genre}`);
-    console.log(`Updated music list: ${musicList}`);
-  }
-
+  let musicList = 
+  ["90's Hip-Hop",
+  "Rock N Roll",
+  "Modern Rap/Street Drill",
+  "UK Drill",
+  "Classical Music",
+  "Classical Jazz",
+  "Pop Music",
+  "Old Style Soul",
+  "EDM",
+  "Country/Folk",
+  "Blues",
+  "K-POP",
+  "Funk",
+  "Salsa",
+  "Goth",
+  "Latin/Spanish",
+  "French Classical",
+  "Jamaican",
+  "Japanese Classical",
+  "Bollywood Music",
+  "Iranian Music",
+  "Chinese Folk",
+  "Opera",
+  "Heavy Metal",
+  "2000's Rap",
+  "Mashed Soul & Rap",
+  "Upbeat",
+  "Poprock",
+  "Hawaiian/Islander Music"];
+const submitButton = document.getElementById('submit-button');
+const musicSelect = document.getElementById('music-select');
+submitButton.addEventListener('click', function () {
+  const selectedMusic = musicSelect.value;
+  removeMusic(selectedMusic);
+});
+function removeMusic(music) {
+  musicList = musicList.filter(item => item !== music);
+  console.log(`Removing music genre: ${music}`);
+  console.log(`Updated music list: ${musicList}`);
+}
 </script>
 
 <script>
     // Music list
-var musicList = ["90's Hip-Hop", "Rock N Roll","Modern Rap/Street Drill","UK Drill","Classical Music","Classical Jazz","Pop Music","Old Style Soul","EDM" "Country/Folk","Blues","K-POP","Funk","Salsa","Goth","Latin/Spanish","French Classical","Jamaican","Japanese Classical","Bollywood Music","Iranian Music","Chinese Folk","Opera","Heavy Metal","2000's Rap","Mashed Soul & Rap","Upbeat","Poprock","Hawaiian/Islander Music"];
+var musicList = ["90's Hip-Hop", "Rock N Roll", "Modern Rap/Street Drill", /* Add the rest of the genres */];
 // Sets the current question
 var currentQuestion = 1;
 // Array for the answers to the questions
@@ -168,6 +193,7 @@ function answer(response) {
   answers[currentQuestion - 1] = response;
   document.getElementById("question" + currentQuestion).style.display = "none";
   currentQuestion++;
+
   if (currentQuestion <= 6) {
     document.getElementById("question" + currentQuestion).style.display = "block";
   } else {
