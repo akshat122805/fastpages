@@ -141,105 +141,35 @@ window.onload = wrap_img;
   <option>Hawaiian/Islander Music</option>
 </select>
 <button id="save-button">Save</button>
-<p>Your current music preference is <span id="saved-music"></span></p>
+<p>Your current music preference is <span id="saved-music"></span><br />Reload to show most recent music taste you want to pursue!</p>
 </div>
 
 <script>
 // JavaScript code that listens to a click on the "Save" button and saves the selected value to local storage
 const saveButton = document.getElementById('save-button');
 const musicSelect = document.getElementById('music-select');
-
+//empty list
+let currentMusic = []; 
+function displaySavedMusic(selectedMusic) {
+  //spacing
+  let x = " " + selectedMusic;
+  //pushes the selectedMusic into the empty list
+  currentMusic.push(x);
+  //identifying span element in lines 80-81
+  let spaan = document.getElementById("saved-music");
+  //setting the text to the music genre selected, innerHTML changes what is between the span text.
+  spaan.innerHTML = currentMusic;
+};
 saveButton.addEventListener('click', function() {
   const selectedMusic = musicSelect.value;
   localStorage.setItem('selectedMusic', selectedMusic);
   displaySavedMusic(selectedMusic);
 }
-
+)
 // JavaScript code that retrieves and displays the saved value when the page is loaded
 const savedMusic = localStorage.getItem('selectedMusic');
 if (savedMusic) {
   displaySavedMusic(savedMusic);
-}
-</script>
-
-<div data-aos="fade-right">
-  <h3>Choose a music genre to remove:</h3>
-  <select id="music-select">
-    <option value="90's Hip-Hop">90's Hip-Hop</option>
-    <option value="Rock N Roll">Rock N Roll</option>
-    <option value="Modern Rap/Street Drill">Modern Rap/Street Drill</option>
-    <option value="UK Drill">UK Drill</option>
-    <option value="Classical Music">Classical Music</option>
-    <option value="Classical Jazz">Classical Jazz</option>
-    <option value="Pop Music">Pop Music</option>
-    <option value="Old Style Soul">Old Style Soul</option>
-    <option value="EDM">EDM</option>
-    <option value="Country/Folk">Country/Folk</option>
-    <option value="Blues">Blues</option>
-    <option value="K-POP">K-POP</option>
-    <option value="Funk">Funk</option>
-    <option value="Salsa">Salsa</option>
-    <option value="Goth">Goth</option>
-    <option value="Latin/Spanish">Latin/Spanish</option>
-    <option value="French Classical">French Classical</option>
-    <option value="Jamaican">Jamaican</option>
-    <option value="Japanese Classical">Japanese Classical</option>
-    <option value="Bollywood Music">Bollywood Music</option>
-    <option value="Iranian Music">Iranian Music</option>
-    <option value="Chinese Folk">Chinese Folk</option>
-    <option value="Opera">Opera</option>
-    <option value="Heavy Metal">Heavy Metal</option>
-    <option value="2000's Rap">2000's Rap</option>
-    <option value="Mashed Soul &amp; Rap">Mashed Soul &amp; Rap</option>
-    <option value="Upbeat">Upbeat</option>
-    <option value="Poprock">Poprock</option>
-    <option value="Hawaiian/Islander Music">Hawaiian/Islander Music</option>
-  </select>
-  <button id="submit-button">Remove</button>
-</div>
-<script>
-  const submitButton = document.getElementById('submit-button');
-  const musicSelect = document.getElementById('music-select');
-  let musicList = 
-  ["90's Hip-Hop",
-  "Rock N Roll",
-  "Modern Rap/Street Drill",
-  "UK Drill",
-  "Classical Music",
-  "Classical Jazz",
-  "Pop Music",
-  "Old Style Soul",
-  "EDM",
-  "Country/Folk",
-  "Blues",
-  "K-POP",
-  "Funk",
-  "Salsa",
-  "Goth",
-  "Latin/Spanish",
-  "French Classical",
-  "Jamaican",
-  "Japanese Classical",
-  "Bollywood Music",
-  "Iranian Music",
-  "Chinese Folk",
-  "Opera",
-  "Heavy Metal",
-  "2000's Rap",
-  "Mashed Soul & Rap",
-  "Upbeat",
-  "Poprock",
-  "Hawaiian/Islander Music"];
-const submitButton = document.getElementById('submit-button');
-const musicSelect = document.getElementById('music-select');
-submitButton.addEventListener('click', function () {
-  const selectedMusic = musicSelect.value;
-  removeMusic(selectedMusic);
-});
-function removeMusic(music) {
-  musicList = musicList.filter(item => item !== music);
-  console.log(`Removing music genre: ${music}`);
-  console.log(`Updated music list: ${musicList}`);
 }
 </script>
 
