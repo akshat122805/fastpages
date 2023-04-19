@@ -111,7 +111,7 @@ if (savedMusic) {
 
 <script>
     // Music list
-var musicList = ["90's Hip-Hop", "Rock N Roll", "Modern Rap/Street Drill", /* Add the rest of the genres */];
+var musicList = ["90's Hip-Hop", "Rock N Roll", "Modern Rap/Street Drill", /*rest of the genres*/];
 // Sets the current question
 var currentQuestion = 1;
 // Array for the answers to the questions
