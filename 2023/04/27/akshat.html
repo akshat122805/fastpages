@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -99,6 +99,7 @@
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In this example, we define a User class with a constructor method <strong>init</strong> that takes username and email as arguments. The display_info method is used to print the user information.</p>
+<p>In the context of backend functionality, this class can be used to create, manipulate, and manage user data. For example, when a new user signs up for an account, you could create a new User object with their username and email. This object can then be used to perform various operations, such as validating the user's input, storing the user's data in a database, or processing user-related requests.</p>
 <p>Creating a new user:</p>
 
 </div>
@@ -125,11 +126,11 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Here's a step-by-step breakdown of how the code relates to backend functionality:</p>
+<p>new_user = User("john_doe", "john@example.com"): This line creates a new User object, initializing it with the username "john_doe" and the email "john@example.com". This could represent a user who has just signed up for an account, and the input values would typically come from user input, such as a registration form.</p>
+<p>new_user.display_info(): This line calls the display_info method on the new_user object, which prints the user's information (username and email) to the console. In a real-world backend application, you might use this method or a similar one to display user information in logs, send a welcome email, or create an API response with the user's data.</p>
 <p>Lecture Topics:</p>
-
-<pre><code>Establishing Class/User Data and making a new user
-
-</code></pre>
+<p>Establishing Class/User Data and making a new user</p>
 <p>In Python, classes are templates used to create objects, which are instances of those classes. Classes define the data elements (attributes) and methods that describe the behavior of the objects. Let's explore how to define a class and create objects in Python.</p>
 <p>Example: Defining a User class</p>
 <p>python</p>
@@ -187,6 +188,7 @@ new_user.display_info()</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In this example, the Employee class has a name attribute, which is accessed and modified through the name property getter and setter methods. The _name attribute uses an underscore prefix, which is a convention to indicate it should not be accessed directly.</p>
+<p>In the context of backend functionality, this Employee class can be used to model employees within an application. You can create instances of this class to store and manage employee data, and the getter and setter methods can be used to access and modify employee information in a controlled way.</p>
 <p>Usage:</p>
 
 </div>
@@ -220,6 +222,7 @@ new_user.display_info()</p>
 print(employee.name)  # Get the name using the getter method</p>
 <p>employee.name = "Jane Doe"  # Set the name using the setter method
 print(employee.name)</p>
+<p>In the context of backend functionality, the getter and setter methods provide a clean and controlled way to access and modify the attributes of an object. This can be particularly useful when interacting with databases, APIs, or other parts of a web application that require the management and manipulation of object attributes.</p>
 
 </div>
 </div>
@@ -273,6 +276,7 @@ print(employee.name)</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Students can then practice creating instances of their Car class and using the getter and setter methods to access and modify the car attributes.</p>
+<p>In the context of backend functionality, this Car class can be used to model cars within an application. You can create instances of this class to store and manage car data, and the getter and setter methods can be used to access and modify car information in a controlled way.</p>
 
 </div>
 </div>
