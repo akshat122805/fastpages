@@ -1,6 +1,9 @@
 ---
 keywords: fastai
-title: Introduction to Databases with SQLite
+description: Overview of SQLite and Introduction to Flask and SQLite
+title: Akshat Lesson
+toc: true
+layout: base
 nb_path: _notebooks/2023-04-26-akshatlesson copy.ipynb
 layout: notebook
 ---
