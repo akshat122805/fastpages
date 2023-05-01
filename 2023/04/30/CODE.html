@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CPT Project (Individual) | Akshat’s FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="CPT Project (Individual)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Music Personality" />
+<meta property="og:description" content="Music Personality" />
+<link rel="canonical" href="https://akshat122805.github.io/fastpages/2023/04/30/CODE.html" />
+<meta property="og:url" content="https://akshat122805.github.io/fastpages/2023/04/30/CODE.html" />
+<meta property="og:site_name" content="Akshat’s FastPages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CPT Project (Individual)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-30T00:00:00-05:00","datePublished":"2023-04-30T00:00:00-05:00","description":"Music Personality","headline":"CPT Project (Individual)","mainEntityOfPage":{"@type":"WebPage","@id":"https://akshat122805.github.io/fastpages/2023/04/30/CODE.html"},"url":"https://akshat122805.github.io/fastpages/2023/04/30/CODE.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://akshat122805.github.io/fastpages/feed.xml" title="Akshat's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Akshat&#39;s FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/notes/">CSP Notes</a><a class="page-link" href="/fastpages/categories/">Tags</a><a class="page-link" href="/fastpages/_pages/04_bellschedule.html">Bell Schedule</a><a class="page-link" href="/fastpages/notes/">HTML Fragments + JS Kernel Table!</a><a class="page-link" href="/fastpages/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!-- Start off with JS to store values and genres selected -->
+<script>
+const storeButton = document.getElementById('store-button');
+const genreSelect = document.getElementById('genre-select');
+let currentGenre = [];
+function showStoredGenre(chosenGenre) {
+  let space = " " + chosenGenre;
+  currentGenre.push(space);
+  let spanElement = document.getElementById("stored-genre");
+  spanElement.innerHTML = currentMusic;
+};
+storeButton.addEventListener('click', function() {
+const chosenGenre = genreSelect.value;
+localStorage.setItem('chosenGenre', chosenGenre);
+showStoredGenre(chosenGenre);
+}
+)
+const storedGenre = localStorage.getItem('chosenGenre');
+if (storedGenre) {
+showStoredGenre(storedGenre);
+}
+</script>
+
+<!-- Start off with creating simple button onclicks for Yes and No for the quiz -->
+<div data-aos="fade-right">
+<h2>Music Taste Questionnaire</h2>
+<div class="question" id="q1">
+        <p>Do you have a preference for contemporary music?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    <div class="question" id="q2" style="display: none">
+        <p>Do you like fast-paced music?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    <div class="question" id="q3" style="display: none">
+        <p>Do you enjoy songs with lyrics?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    <div class="question" id="q4" style="display: none">
+        <p>Do you have a preference for instrumental songs?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    <div class="question" id="q5" style="display: none">
+        <p>Do you appreciate electronic tunes?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    <div class="question" id="q6" style="display: none">
+        <p>Do you enjoy music from various cultures?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+<div id="outcome" style="display: none"></div>
+</div>
+<div style="padding: 10px;"></div>
+<div data-aos="fade-right">
+<h3>Which music genre would you like to explore?</h3>
+<!-- All genres, I thought of as many possible -->
+<select id="genre-select">
+  <div class="dropdown">
+  <button onclick="toggleDropdown()" class="dropdown-btn">Choose Genre</button>
+  <div id="dropdown-content" class="dropdown-content">
+    <div class="option" onclick="selectOption('90s Hip-Hop')">90s Hip-Hop</div>
+    <div class="option" onclick="selectOption('Rock N Roll')">Rock N Roll</div>
+    <div class="option" onclick="selectOption('Modern Rap/Street Drill')">Modern Rap/Street Drill</div>
+    <div class="option" onclick="selectOption('UK Drill')">UK Drill</div>
+    <div class="option" onclick="selectOption('Classical Music')">Classical Music</div>
+    <div class="option" onclick="selectOption('Classical Jazz')">Classical Jazz</div>
+    <div class="option" onclick="selectOption('Pop Music')">Pop Music</div>
+    <div class="option" onclick="selectOption('Old Style Soul')">Old Style Soul</div>
+    <div class="option" onclick="selectOption('EDM')">EDM</div>
+    <div class="option" onclick="selectOption('Country/Folk')">Country/Folk</div>
+    <div class="option" onclick="selectOption('Blues')">Blues</div>
+    <div class="option" onclick="selectOption('K-POP')">K-POP</div>
+    <div class="option" onclick="selectOption('Funk')">Funk</div>
+    <div class="option" onclick="selectOption('Salsa')">Salsa</div>
+    <div class="option" onclick="selectOption('Goth')">Goth</div>
+    <div class="option" onclick="selectOption('Latin/Spanish')">Latin/Spanish</div>
+    <div class="option" onclick="selectOption('French Classical')">French Classical</div>
+    <div class="option" onclick="selectOption('Jamaican')">Jamaican</div>
+    <div class="option" onclick="selectOption('Japanese Classical')">Japanese Classical</div>
+    <div class="option" onclick="selectOption('Bollywood Music')">Bollywood Music</div>
+    <div class="option" onclick="selectOption('Iranian Music')">Iranian Music</div>
+    <div class="option" onclick="selectOption('Chinese Folk')">Chinese Folk</div>
+    <div class="option" onclick="selectOption('Opera')">Opera</div>
+    <div class="option" onclick="selectOption('Heavy Metal')">Heavy Metal</div>
+    <div class="option" onclick="selectOption('2000s Rap')">2000s Rap</div>
+    <div class="option" onclick="selectOption('Mashed Soul &amp; Rap')">Mashed Soul &amp; Rap</div>
+    <div class="option" onclick="selectOption('Upbeat')">Upbeat</div>
+    <div class="option" onclick="selectOption('Poprock')">Poprock</div>
+    <div class="option" onclick="selectOption('Hawaiian/Islander Music')">Hawaiian/Islander Music</div>
+  </div>
+</div>
+</select>
+<button id="store-button">Save</button>
+<p>Your current music taste is <span id="stored-genre"></span><br />Refresh to display the most recent genre you wish to explore!</p>
+</div>
+<!-- Now we begin conditionals for what genre the user will get based on what he selects -->
+<script>
+var genreList = ["90's Hip-Hop", "Rock N Roll", "Modern Rap/Street Drill", "UK Drill", "Classical Music", "Classical Jazz", "Pop Music" "Old Style Soul", "EDM", "Country/Folk", "Blues", "K-POP", "Funk", "Salsa", "Goth", "Latin/Spanish", "French Classical", "Jamaican", "Japanese-Classical", "Bollywood Music", "Iranian Music", "Chinese Folk", "Opera", "Heavy Metal", "2000's Rap", "Mashed Soul & Rap", "Upbeat", "Poprock", "Hawaiian/Islander Music"];
+var presentQuestion = 1;
+var responses = [];
+function response(answer) {
+  responses[presentQuestion - 1] = answer;
+  document.getElementById("q" + presentQuestion).style.display = "none";
+  presentQuestion++;
+  if (presentQuestion <= 6) {
+    document.getElementById("q" + presentQuestion).style.display = "block";
+  } else {
+    filterMusicGenres(responses[0], responses[1], responses[2], responses[3], responses[4], responses[5]);
+    document.getElementById("outcome").style.display = "block";
+    document.getElementById("outcome").innerHTML = "Based on your responses, we suggest the following music genres: " + genreList.join(", ");
+  }
+}
+function filterMusicGenres(likesFast, likesSlow, likesInstrumental, likesElectronic, likesVocals, likesLyrical) {
+  function filterGenres(genreList, excludedGenres) {
+  return genreList.filter(genre => !excludedGenres.includes(genre));
+}
+if (likesFast) {
+  genreList = filterGenres(genreList, ["Classical Music", "Classical Jazz", "Old Style Soul", "Blues", "French Classical", "Opera", "Hawaiian/Islander Music"]);
+}
+if (likesSlow) {
+  genreList = filterGenres(genreList, ["EDM", "K-POP", "Funk", "Salsa", "Heavy Metal", "Upbeat"]);
+}
+if (likesInstrumental) {
+  genreList = filterGenres(genreList, ["Modern Rap/Street Drill", "K-POP", "2000's Rap", "Mashed Soul & Rap", "Poprock"]);
+}
+if (likesElectronic) {
+  genreList = filterGenres(genreList, ["Classical Music", "Classical Jazz", "Old Style Soul", "Blues", "Country/Folk", "French Classical", "Japanese Classical", "Opera", "Hawaiian/Islander Music"]);
+}
+if (likesVocals) {
+  genreList = filterGenres(genreList, ["EDM", "Classical Music", "Classical Jazz", "Country/Folk", "Chinese Folk"]);
+}
+if (likesLyrical) {
+  genreList = filterGenres(genreList, ["EDM", "K-POP", "Funk", "Salsa", "Heavy Metal", "Upbeat", "Poprock", "Hawaiian/Islander Music"]);
+}
+document.getElementById("outcome").innerHTML = "Based on your responses, we suggest the following music genres: " + genreList.join(", ");
+
+</script>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://akshat122805.github.io/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
